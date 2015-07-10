@@ -17,13 +17,16 @@ if (birthdate.charAt(2) === "/" && birthdate.charAt(5) === "/") {
 }
 
 // Postal code//
+
 var postal = prompt("Please enter your postal code (xxxxx OR xxxxx-xxxx)");
 
 if (postal.charAt(5) === "" || postal.charAt(5) === "-") {
     alert("Valid postal code!  Thank you.")
   } else {alert("Invalid postal code.")
 }
+
 // State Abbreviation//
+
 var state = prompt("Please enter your state abbreviation (XX)");
 
 if (state.charAt(3) === "") {
@@ -35,9 +38,9 @@ if (state.charAt(3) === "") {
 
 var married = prompt("Are you married?");
 
-if (married === "yes" || "YES" || "Yes") {
+if (married === "yes" || married === "YES" || married ==="Yes") {
   alert("Lucky you!  I hope you have a long and happy marriage.")
-  } else if (married === "no" || "NO" || "No") {
+} else if (married === "no" || married === "NO" || married ==="No") {
     alert("All the single ladies!")
   } else {
     alert("Invalid answer")
